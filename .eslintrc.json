@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "unused-imports", "jsx-a11y"],
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "indent": [1],
+    "no-console": "off",
+    "no-debugger": "off",
+    "@typescript-eslint/type-annotation-spacing": ["warn", {
+      "after": true
+    }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/no-redundant-roles": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/no-array-index-key": "off",
+    "react/hook-use-state": "error",
+    "react/no-unsafe": "error",
+    "react/prop-types": 0,
+    // "react/no-multi-comp": "error",
+    "react/forbid-prop-types": "error",
+    "react/jsx-closing-bracket-location": [1, { "selfClosing": "line-aligned", "nonEmpty": "after-props" }],
+    "react/jsx-tag-spacing": [1, { "beforeSelfClosing": "always" }],
+    // "react/jsx-one-expression-per-line": [1, { "allow": "single-child" }],
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-child-element-spacing": "error",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-sort-props": "error",
+    "react/no-string-refs": "error",
+    "react/jsx-wrap-multilines": "error",
+    "react/jsx-no-target-blank": "off",
+    "react/self-closing-comp": "error",
+    "react/require-render-return": "error",
+
+    "react/jsx-indent": "error",
+    "comma-spacing": ["error", { "after": true }],
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": true }],
+    "array-bracket-spacing": ["error", "never"],
+    "computed-property-spacing": ["error", "never"],
+    "no-duplicate-imports": ["error", {
+      "includeExports": true
+    }],
+    "no-multi-spaces": ["error"],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "brace-style": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error"
+  }
+}
